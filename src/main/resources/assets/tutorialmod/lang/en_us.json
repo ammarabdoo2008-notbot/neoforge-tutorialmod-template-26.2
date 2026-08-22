@@ -4,7 +4,7 @@
 
   "block.tutorialmod.raw_ammarito_block" : "Raw Ammarito Block",
   "block.tutorialmod.ammarito_block" : "Ammarito Block",
-  "block.tutorialmod.ammarito_ore_block" : "Ammarito Ore",
+  "block.tutorialmod.ammarito_ore" : "Ammarito Ore",
 
   "creativetab.tutorialmod.ammarito_items": "Ammarito Tutorial Items",
   "creativetab.tutorialmod.ammarito_blocks": "Ammarito Tutorial Blocks"
