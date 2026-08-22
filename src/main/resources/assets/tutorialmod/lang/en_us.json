@@ -1,0 +1,12 @@
+{
+  "item.tutorialmod.ammarito" : "Ammarito",
+
+  "tutorialmod.configuration.title": "Tutorial Mod Configs",
+  "tutorialmod.configuration.section.tutorialmod.common.toml": "Tutorial Mod Configs",
+  "tutorialmod.configuration.section.tutorialmod.common.toml.title": "Tutorial Mod Configs",
+  "tutorialmod.configuration.items": "Item List",
+  "tutorialmod.configuration.logDirtBlock": "Log Dirt Block",
+  "tutorialmod.configuration.magicNumberIntroduction": "Magic Number Text",
+  "tutorialmod.configuration.magicNumber": "Magic Number",
+  "creativetab.tutorialmod.ammarito_items": "Ammarito Tutorial Items"
+}
