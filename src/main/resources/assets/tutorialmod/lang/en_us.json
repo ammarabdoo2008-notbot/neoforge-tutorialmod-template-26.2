@@ -2,12 +2,10 @@
   "item.tutorialmod.ammarito" : "Ammarito",
   "item.tutorialmod.raw_ammarito" : "Raw Ammarito",
 
-  "tutorialmod.configuration.title": "Tutorial Mod Configs",
-  "tutorialmod.configuration.section.tutorialmod.common.toml": "Tutorial Mod Configs",
-  "tutorialmod.configuration.section.tutorialmod.common.toml.title": "Tutorial Mod Configs",
-  "tutorialmod.configuration.items": "Item List",
-  "tutorialmod.configuration.logDirtBlock": "Log Dirt Block",
-  "tutorialmod.configuration.magicNumberIntroduction": "Magic Number Text",
-  "tutorialmod.configuration.magicNumber": "Magic Number",
-  "creativetab.tutorialmod.ammarito_items": "Ammarito Tutorial Items"
+  "block.tutorialmod.raw_ammarito_block" : "Raw Ammarito Block",
+  "block.tutorialmod.ammarito_block" : "Ammarito Block",
+  "block.tutorialmod.ammarito_ore_block" : "Ammarito Ore",
+
+  "creativetab.tutorialmod.ammarito_items": "Ammarito Tutorial Items",
+  "creativetab.tutorialmod.ammarito_blocks": "Ammarito Tutorial Blocks"
 }
