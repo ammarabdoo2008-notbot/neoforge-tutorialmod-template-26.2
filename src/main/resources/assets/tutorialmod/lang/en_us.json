@@ -1,5 +1,6 @@
 {
   "item.tutorialmod.ammarito" : "Ammarito",
+  "item.tutorialmod.raw_ammarito" : "Raw Ammarito",
 
   "tutorialmod.configuration.title": "Tutorial Mod Configs",
   "tutorialmod.configuration.section.tutorialmod.common.toml": "Tutorial Mod Configs",

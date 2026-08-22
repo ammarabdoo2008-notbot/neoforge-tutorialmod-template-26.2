@@ -26,6 +26,7 @@ public class ModCreativeModeTabs {
                    // .withTabsAfter(Identifier.fromNamespaceAndPath(TutorialMod.MOD_ID, ""))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.AMMARITO);
+                        output.accept(ModItems.RAW_AMMARITO);
                     })
 
 
