@@ -9,6 +9,7 @@ import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.CookingBookCategory;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -47,6 +48,18 @@ public class ModRecipeProvider extends RecipeProvider {
                 .define('A', ModItems.AMMARITO.get())
                 .unlockedBy(getHasName(ModItems.AMMARITO.get()), has(ModItems.AMMARITO))
                 .group("ammarito")
+                .save(output);
+
+        shaped(RecipeCategory.MISC, ModItems.METAL_DETECTOR.get())
+                .pattern("IGI")
+                .pattern("IRI")
+                .pattern("ICI")
+                .define('I', Items.IRON_INGOT)
+                .define('R', Items.REDSTONE)
+                .define('C', Items.CLOCK)
+                .define('G', Items.GLASS)
+                .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
+                .group("ammars custom gadgets")
                 .save(output);
 
         shapeless(RecipeCategory.MISC, ModItems.AMMARITO.get(), 9)

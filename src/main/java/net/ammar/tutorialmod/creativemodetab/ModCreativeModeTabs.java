@@ -29,6 +29,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.AMMARITO);
                         output.accept(ModItems.RAW_AMMARITO);
+                        output.accept(ModItems.METAL_DETECTOR);
                     })
 
 

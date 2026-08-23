@@ -7,5 +7,8 @@
   "block.tutorialmod.ammarito_ore" : "Ammarito Ore",
 
   "creativetab.tutorialmod.ammarito_items": "Ammarito Tutorial Items",
-  "creativetab.tutorialmod.ammarito_blocks": "Ammarito Tutorial Blocks"
+  "creativetab.tutorialmod.ammarito_blocks": "Ammarito Tutorial Blocks",
+
+  "item.tutorialmod.metal_detector.no_valuables": "No Valueables Detected!!",
+  "item.tutorialmod.metal_detector": "Metal Detector"
 }

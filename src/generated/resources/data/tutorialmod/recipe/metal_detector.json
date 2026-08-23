@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "ammars custom gadgets",
+  "key": {
+    "C": "minecraft:clock",
+    "G": "minecraft:glass",
+    "I": "minecraft:iron_ingot",
+    "R": "minecraft:redstone"
+  },
+  "pattern": [
+    "IGI",
+    "IRI",
+    "ICI"
+  ],
+  "result": {
+    "id": "tutorialmod:metal_detector"
+  }
+}
