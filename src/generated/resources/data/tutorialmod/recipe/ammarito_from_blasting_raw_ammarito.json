@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "experience": 0.5,
+  "group": "ammarito",
+  "ingredient": "tutorialmod:raw_ammarito",
+  "result": {
+    "id": "tutorialmod:ammarito"
+  }
+}

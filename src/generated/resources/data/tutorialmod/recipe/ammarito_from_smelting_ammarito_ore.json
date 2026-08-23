@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 0.25,
+  "group": "ammarito",
+  "ingredient": "tutorialmod:ammarito_ore",
+  "result": {
+    "id": "tutorialmod:ammarito"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_ammarito": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tutorialmod:raw_ammarito"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "tutorialmod:ammarito_from_blasting_raw_ammarito"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_raw_ammarito"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "tutorialmod:ammarito_from_blasting_raw_ammarito"
+    ]
+  }
+}

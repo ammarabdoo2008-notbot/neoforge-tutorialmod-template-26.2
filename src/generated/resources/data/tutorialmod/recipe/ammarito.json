@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "ammarito",
+  "ingredients": [
+    "tutorialmod:ammarito_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "tutorialmod:ammarito"
+  }
+}
