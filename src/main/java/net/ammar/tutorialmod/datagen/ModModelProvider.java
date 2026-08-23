@@ -19,6 +19,7 @@ public class ModModelProvider extends ModelProvider {
         itemModels.generateFlatItem(ModItems.AMMARITO.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.RAW_AMMARITO.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.METAL_DETECTOR.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.SHIKO_WAND.get(), ModelTemplates.FLAT_ITEM);
 
         // Blocks
 

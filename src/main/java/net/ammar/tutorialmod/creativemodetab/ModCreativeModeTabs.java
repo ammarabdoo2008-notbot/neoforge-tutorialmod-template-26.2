@@ -30,6 +30,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.AMMARITO);
                         output.accept(ModItems.RAW_AMMARITO);
                         output.accept(ModItems.METAL_DETECTOR);
+                        output.accept(ModItems.SHIKO_WAND);
                     })
 
 

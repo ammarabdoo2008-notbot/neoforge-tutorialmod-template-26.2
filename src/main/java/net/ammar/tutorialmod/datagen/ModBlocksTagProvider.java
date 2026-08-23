@@ -2,6 +2,7 @@ package net.ammar.tutorialmod.datagen;
 
 import net.ammar.tutorialmod.TutorialMod;
 import net.ammar.tutorialmod.block.ModBlocks;
+import net.ammar.tutorialmod.tags.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -28,5 +29,8 @@ public class ModBlocksTagProvider extends BlockTagsProvider {
 
       tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
               .add(ModBlocks.AMMARITO_BLOCK.getKey());
+
+      tag(ModTags.Blocks.METAL_DETECTABLES)
+              .addTag(Tags.Blocks.ORES);
     }
 }

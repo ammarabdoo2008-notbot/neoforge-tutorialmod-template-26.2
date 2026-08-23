@@ -2,6 +2,7 @@ package net.ammar.tutorialmod.item;
 
 import net.ammar.tutorialmod.TutorialMod;
 import net.ammar.tutorialmod.item.custom.MetalDetectorItem;
+import net.ammar.tutorialmod.item.custom.ShikoWandItem;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
@@ -20,6 +21,11 @@ public class ModItems {
                     .durability(200)
                     .enchantable(20)
                     .repairable(Tags.Items.INGOTS_IRON)));
+
+    public static final DeferredItem<Item> SHIKO_WAND = ITEMS.registerItem("shiko_wand", properties ->
+            new ShikoWandItem(properties
+                    .durability(500)
+                    .enchantable(20)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

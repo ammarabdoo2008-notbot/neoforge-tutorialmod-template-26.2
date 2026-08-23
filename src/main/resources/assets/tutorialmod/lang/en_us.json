@@ -10,5 +10,7 @@
   "creativetab.tutorialmod.ammarito_blocks": "Ammarito Tutorial Blocks",
 
   "item.tutorialmod.metal_detector.no_valuables": "No Valueables Detected!!",
-  "item.tutorialmod.metal_detector": "Metal Detector"
+  "item.tutorialmod.metal_detector": "Metal Detector",
+
+  "item.tutorialmod.shiko_wand" : "Shiko Magic Wand"
 }

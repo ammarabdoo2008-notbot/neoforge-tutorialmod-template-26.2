@@ -10,6 +10,7 @@ import net.minecraft.world.level.block.Block;
 
 public class ModTags {
     public static class Blocks {
+        public static TagKey<Block> METAL_DETECTABLES = createTag("metal_detectables");
 
         private static TagKey<Block> createTag(String name) {
             return BlockTags.create(Identifier.fromNamespaceAndPath(TutorialMod.MOD_ID, name));
@@ -17,6 +18,7 @@ public class ModTags {
     }
 
     public static class Items {
+
 
         private static TagKey<Item> createTag(String name) {
             return ItemTags.create(Identifier.fromNamespaceAndPath(TutorialMod.MOD_ID, name));
