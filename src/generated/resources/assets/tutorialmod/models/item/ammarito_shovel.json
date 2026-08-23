@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "tutorialmod:item/shiko_wand"
+    "layer0": "tutorialmod:item/ammarito_shovel"
   }
 }

@@ -18,8 +18,18 @@ public class ModModelProvider extends ModelProvider {
     protected void registerModels(BlockModelGenerators blockModels, ItemModelGenerators itemModels) {
         itemModels.generateFlatItem(ModItems.AMMARITO.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.RAW_AMMARITO.get(), ModelTemplates.FLAT_ITEM);
-        itemModels.generateFlatItem(ModItems.METAL_DETECTOR.get(), ModelTemplates.FLAT_ITEM);
-        itemModels.generateFlatItem(ModItems.SHIKO_WAND.get(), ModelTemplates.FLAT_ITEM);
+
+        itemModels.generateFlatItem(ModItems.METAL_DETECTOR.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ModItems.SHIKO_WAND.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+
+        itemModels.generateFlatItem(ModItems.AMMARITO_SWORD.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ModItems.AMMARITO_PICKAXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ModItems.AMMARITO_AXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ModItems.AMMARITO_SHOVEL.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ModItems.AMMARITO_HOE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+
+
+
 
         // Blocks
 

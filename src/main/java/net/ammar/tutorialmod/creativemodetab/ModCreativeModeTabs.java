@@ -31,6 +31,12 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.RAW_AMMARITO);
                         output.accept(ModItems.METAL_DETECTOR);
                         output.accept(ModItems.SHIKO_WAND);
+
+                        output.accept(ModItems.AMMARITO_SWORD);
+                        output.accept(ModItems.AMMARITO_PICKAXE);
+                        output.accept(ModItems.AMMARITO_AXE);
+                        output.accept(ModItems.AMMARITO_HOE);
+                        output.accept(ModItems.AMMARITO_SHOVEL);
                     })
 
 

@@ -12,12 +12,17 @@ public class ModTags {
     public static class Blocks {
         public static TagKey<Block> METAL_DETECTABLES = createTag("metal_detectables");
 
+        public static final TagKey<Block> NEEDS_AMMARITO_TOOL = createTag("needs_ammarito_tool");
+            public static final TagKey<Block> INCORRECT_FOR_AMMARITO_TOOL = createTag("incorrect_for_ammarito_tool");
+
         private static TagKey<Block> createTag(String name) {
             return BlockTags.create(Identifier.fromNamespaceAndPath(TutorialMod.MOD_ID, name));
         }
     }
 
     public static class Items {
+
+        public static final TagKey<Item> AMMARITO_REPAIRABLE = createTag("ammarito_repairable");
 
 
         private static TagKey<Item> createTag(String name) {

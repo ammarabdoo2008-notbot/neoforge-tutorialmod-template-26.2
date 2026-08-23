@@ -32,5 +32,12 @@ public class ModBlocksTagProvider extends BlockTagsProvider {
 
       tag(ModTags.Blocks.METAL_DETECTABLES)
               .addTag(Tags.Blocks.ORES);
+
+      tag(ModTags.Blocks.NEEDS_AMMARITO_TOOL)
+              .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
+
+      tag(ModTags.Blocks.INCORRECT_FOR_AMMARITO_TOOL)
+              .addTag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
+              .remove(ModTags.Blocks.NEEDS_AMMARITO_TOOL);
     }
 }
