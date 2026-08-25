@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "ammarito",
+  "key": {
+    "A": "tutorialmod:ammarito"
+  },
+  "pattern": [
+    "A A",
+    "AAA",
+    "AAA"
+  ],
+  "result": {
+    "id": "tutorialmod:ammarito_chestplate"
+  }
+}

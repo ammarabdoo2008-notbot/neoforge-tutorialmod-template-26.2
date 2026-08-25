@@ -37,6 +37,11 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.AMMARITO_AXE);
                         output.accept(ModItems.AMMARITO_HOE);
                         output.accept(ModItems.AMMARITO_SHOVEL);
+
+                        output.accept(ModItems.AMMARITO_HELMET);
+                        output.accept(ModItems.AMMARITO_CHESTPLATE);
+                        output.accept(ModItems.AMMARITO_LEGGINGS);
+                        output.accept(ModItems.AMMARITO_BOOTS);
                     })
 
 

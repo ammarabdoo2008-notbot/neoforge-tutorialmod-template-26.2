@@ -27,5 +27,10 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         tag(ItemTags.AXES).add(ModItems.AMMARITO_AXE.getKey());
         tag(ItemTags.HOES).add(ModItems.AMMARITO_HOE.getKey());
 
+        tag(ItemTags.FOOT_ARMOR).add(ModItems.AMMARITO_BOOTS.getKey());
+        tag(ItemTags.LEG_ARMOR).add(ModItems.AMMARITO_LEGGINGS.getKey());
+        tag(ItemTags.CHEST_ARMOR).add(ModItems.AMMARITO_CHESTPLATE.getKey());
+        tag(ItemTags.HEAD_ARMOR).add(ModItems.AMMARITO_HELMET.getKey());
+
     }
 }

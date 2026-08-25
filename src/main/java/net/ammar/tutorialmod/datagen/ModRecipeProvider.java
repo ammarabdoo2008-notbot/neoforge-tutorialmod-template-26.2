@@ -50,6 +50,99 @@ public class ModRecipeProvider extends RecipeProvider {
                 .group("ammarito")
                 .save(output);
 
+        shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_AMMARITO_BLOCK.get())
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.RAW_AMMARITO.get())
+                .unlockedBy(getHasName(ModItems.RAW_AMMARITO.get()), has(ModItems.RAW_AMMARITO))
+                .group("ammarito")
+                .save(output);
+
+        shaped(RecipeCategory.COMBAT, ModItems.AMMARITO_HELMET.get())
+                .pattern("AAA")
+                .pattern("A A")
+                .define('A', ModItems.AMMARITO.get())
+                .unlockedBy(getHasName(ModItems.AMMARITO.get()), has(ModItems.AMMARITO))
+                .group("ammarito")
+                .save(output);
+
+        shaped(RecipeCategory.COMBAT, ModItems.AMMARITO_CHESTPLATE.get())
+                .pattern("A A")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.AMMARITO.get())
+                .unlockedBy(getHasName(ModItems.AMMARITO.get()), has(ModItems.AMMARITO))
+                .group("ammarito")
+                .save(output);
+
+        shaped(RecipeCategory.COMBAT, ModItems.AMMARITO_LEGGINGS.get())
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("A A")
+                .define('A', ModItems.AMMARITO.get())
+                .unlockedBy(getHasName(ModItems.AMMARITO.get()), has(ModItems.AMMARITO))
+                .group("ammarito")
+                .save(output);
+
+        shaped(RecipeCategory.COMBAT, ModItems.AMMARITO_BOOTS.get())
+                .pattern("A A")
+                .pattern("A A")
+                .define('A', ModItems.AMMARITO.get())
+                .unlockedBy(getHasName(ModItems.AMMARITO.get()), has(ModItems.AMMARITO))
+                .group("ammarito")
+                .save(output);
+
+        shaped(RecipeCategory.COMBAT, ModItems.AMMARITO_SWORD.get())
+                .pattern("A")
+                .pattern("A")
+                .pattern("S")
+                .define('A', ModItems.AMMARITO.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.AMMARITO.get()), has(ModItems.AMMARITO))
+                .group("ammarito")
+                .save(output);
+
+        shaped(RecipeCategory.COMBAT, ModItems.AMMARITO_PICKAXE.get())
+                .pattern("AAA")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('A', ModItems.AMMARITO.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.AMMARITO.get()), has(ModItems.AMMARITO))
+                .group("ammarito")
+                .save(output);
+
+        shaped(RecipeCategory.COMBAT, ModItems.AMMARITO_AXE.get())
+                .pattern("AA")
+                .pattern("SA")
+                .pattern("S ")
+                .define('A', ModItems.AMMARITO.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.AMMARITO.get()), has(ModItems.AMMARITO))
+                .group("ammarito")
+                .save(output);
+
+        shaped(RecipeCategory.COMBAT, ModItems.AMMARITO_SHOVEL.get())
+                .pattern("A")
+                .pattern("S")
+                .pattern("S")
+                .define('A', ModItems.AMMARITO.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.AMMARITO.get()), has(ModItems.AMMARITO))
+                .group("ammarito")
+                .save(output);
+
+        shaped(RecipeCategory.COMBAT, ModItems.AMMARITO_HOE.get())
+                .pattern("AA")
+                .pattern("S ")
+                .pattern("S ")
+                .define('A', ModItems.AMMARITO.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.AMMARITO.get()), has(ModItems.AMMARITO))
+                .group("ammarito")
+                .save(output);
+
         shaped(RecipeCategory.MISC, ModItems.METAL_DETECTOR.get())
                 .pattern("IGI")
                 .pattern("IRI")

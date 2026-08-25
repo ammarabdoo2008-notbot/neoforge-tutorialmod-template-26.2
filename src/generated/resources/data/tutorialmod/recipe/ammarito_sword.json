@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "ammarito",
+  "key": {
+    "A": "tutorialmod:ammarito",
+    "S": "minecraft:stick"
+  },
+  "pattern": [
+    "A",
+    "A",
+    "S"
+  ],
+  "result": {
+    "id": "tutorialmod:ammarito_sword"
+  }
+}

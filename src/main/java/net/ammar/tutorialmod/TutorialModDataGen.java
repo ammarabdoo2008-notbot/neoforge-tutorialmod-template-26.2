@@ -1,9 +1,6 @@
 package net.ammar.tutorialmod;
 
-import net.ammar.tutorialmod.datagen.ModBlockLootTableProvider;
-import net.ammar.tutorialmod.datagen.ModBlocksTagProvider;
-import net.ammar.tutorialmod.datagen.ModModelProvider;
-import net.ammar.tutorialmod.datagen.ModRecipeProvider;
+import net.ammar.tutorialmod.datagen.*;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.LootTableProvider;
@@ -30,5 +27,7 @@ public class TutorialModDataGen {
                 List.of(new LootTableProvider.SubProviderEntry(ModBlockLootTableProvider::new, LootContextParamSets.BLOCK)),lookupProvider));
 
         generator.addProvider(true , new ModRecipeProvider.Runner(packOutput, lookupProvider));
+        generator.addProvider(true , new ModEquipmentAssetProvider(packOutput));
+
     }
 }

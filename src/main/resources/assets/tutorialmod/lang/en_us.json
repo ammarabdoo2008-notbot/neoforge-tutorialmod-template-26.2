@@ -8,6 +8,11 @@
   "item.tutorialmod.ammarito_shovel" : "Ammarito Shovel",
   "item.tutorialmod.ammarito_hoe" : "Ammarito Hoe",
 
+  "item.tutorialmod.ammarito_helmet" : "Ammarito Helmet",
+  "item.tutorialmod.ammarito_chestplate" : "Ammarito Chestplate",
+  "item.tutorialmod.ammarito_leggings" : "Ammarito Leggings",
+  "item.tutorialmod.ammarito_boots" : "Ammarito Boots",
+
   "block.tutorialmod.raw_ammarito_block" : "Raw Ammarito Block",
   "block.tutorialmod.ammarito_block" : "Ammarito Block",
   "block.tutorialmod.ammarito_ore" : "Ammarito Ore",

@@ -2,6 +2,7 @@ package net.ammar.tutorialmod.datagen;
 
 import net.ammar.tutorialmod.TutorialMod;
 import net.ammar.tutorialmod.block.ModBlocks;
+import net.ammar.tutorialmod.item.ModArmorMaterials;
 import net.ammar.tutorialmod.item.ModItems;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
@@ -27,6 +28,11 @@ public class ModModelProvider extends ModelProvider {
         itemModels.generateFlatItem(ModItems.AMMARITO_AXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ModItems.AMMARITO_SHOVEL.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ModItems.AMMARITO_HOE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+
+        itemModels.generateTrimmableItem(ModItems.AMMARITO_HELMET.get(), ModArmorMaterials.AMMARITO_KEY, ItemModelGenerators.TRIM_PREFIX_HELMET, false);
+        itemModels.generateTrimmableItem(ModItems.AMMARITO_CHESTPLATE.get(), ModArmorMaterials.AMMARITO_KEY, ItemModelGenerators.TRIM_PREFIX_CHESTPLATE, false);
+        itemModels.generateTrimmableItem(ModItems.AMMARITO_LEGGINGS.get(), ModArmorMaterials.AMMARITO_KEY, ItemModelGenerators.TRIM_PREFIX_LEGGINGS, false);
+        itemModels.generateTrimmableItem(ModItems.AMMARITO_BOOTS.get(), ModArmorMaterials.AMMARITO_KEY, ItemModelGenerators.TRIM_PREFIX_BOOTS, false);
 
 
 

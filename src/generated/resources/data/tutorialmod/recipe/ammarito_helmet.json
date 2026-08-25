@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "ammarito",
+  "key": {
+    "A": "tutorialmod:ammarito"
+  },
+  "pattern": [
+    "AAA",
+    "A A"
+  ],
+  "result": {
+    "id": "tutorialmod:ammarito_helmet"
+  }
+}

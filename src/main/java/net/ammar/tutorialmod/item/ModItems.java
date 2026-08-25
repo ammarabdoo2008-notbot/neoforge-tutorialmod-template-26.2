@@ -3,12 +3,11 @@ package net.ammar.tutorialmod.item;
 import net.ammar.tutorialmod.TutorialMod;
 import net.ammar.tutorialmod.item.custom.MetalDetectorItem;
 import net.ammar.tutorialmod.item.custom.ShikoWandItem;
-import net.ammar.tutorialmod.tags.ModTags;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ShovelItem;
+import net.minecraft.world.item.equipment.ArmorType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -41,6 +40,16 @@ public class ModItems {
             new ShovelItem(ModToolTiers.AMMARITO, 1.5f ,-3f, properties));
     public static final DeferredItem<Item> AMMARITO_HOE = ITEMS.registerItem("ammarito_hoe", properties ->
             new HoeItem(ModToolTiers.AMMARITO, 0 ,-3F, properties));
+
+    public static final DeferredItem<Item> AMMARITO_HELMET = ITEMS.registerItem("ammarito_helmet",
+            properties -> new Item(properties.humanoidArmor(ModArmorMaterials.AMMARITO_ARMOR_MATERIAL, ArmorType.HELMET)));
+    public static final DeferredItem<Item> AMMARITO_CHESTPLATE = ITEMS.registerItem("ammarito_chestplate",
+            properties -> new Item(properties.humanoidArmor(ModArmorMaterials.AMMARITO_ARMOR_MATERIAL, ArmorType.CHESTPLATE)));
+    public static final DeferredItem<Item> AMMARITO_LEGGINGS = ITEMS.registerItem("ammarito_leggings",
+            properties -> new Item(properties.humanoidArmor(ModArmorMaterials.AMMARITO_ARMOR_MATERIAL, ArmorType.LEGGINGS)));
+    public static final DeferredItem<Item> AMMARITO_BOOTS = ITEMS.registerItem("ammarito_boots",
+            properties -> new Item(properties.humanoidArmor(ModArmorMaterials.AMMARITO_ARMOR_MATERIAL, ArmorType.BOOTS)));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

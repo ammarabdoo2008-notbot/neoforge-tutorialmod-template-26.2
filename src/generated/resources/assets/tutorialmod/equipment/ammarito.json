@@ -1,0 +1,19 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "tutorialmod:ammarito"
+      }
+    ],
+    "humanoid_baby": [
+      {
+        "texture": "tutorialmod:ammarito"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "tutorialmod:ammarito"
+      }
+    ]
+  }
+}

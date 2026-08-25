@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "ammarito",
+  "key": {
+    "A": "tutorialmod:raw_ammarito"
+  },
+  "pattern": [
+    "AAA",
+    "AAA",
+    "AAA"
+  ],
+  "result": {
+    "id": "tutorialmod:raw_ammarito_block"
+  }
+}
