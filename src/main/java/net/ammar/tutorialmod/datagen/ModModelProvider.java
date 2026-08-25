@@ -9,6 +9,7 @@ import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.ModelProvider;
 import net.minecraft.client.data.models.model.ModelTemplates;
 import net.minecraft.data.PackOutput;
+import net.neoforged.fml.common.Mod;
 
 public class ModModelProvider extends ModelProvider {
     public ModModelProvider(PackOutput output) {
@@ -21,7 +22,7 @@ public class ModModelProvider extends ModelProvider {
         itemModels.generateFlatItem(ModItems.RAW_AMMARITO.get(), ModelTemplates.FLAT_ITEM);
 
         itemModels.generateFlatItem(ModItems.METAL_DETECTOR.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
-        itemModels.generateFlatItem(ModItems.SHIKO_WAND.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        //itemModels.generateFlatItem(ModItems.SHIKO_WAND.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
 
         itemModels.generateFlatItem(ModItems.AMMARITO_SWORD.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ModItems.AMMARITO_PICKAXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
@@ -33,6 +34,8 @@ public class ModModelProvider extends ModelProvider {
         itemModels.generateTrimmableItem(ModItems.AMMARITO_CHESTPLATE.get(), ModArmorMaterials.AMMARITO_KEY, ItemModelGenerators.TRIM_PREFIX_CHESTPLATE, false);
         itemModels.generateTrimmableItem(ModItems.AMMARITO_LEGGINGS.get(), ModArmorMaterials.AMMARITO_KEY, ItemModelGenerators.TRIM_PREFIX_LEGGINGS, false);
         itemModels.generateTrimmableItem(ModItems.AMMARITO_BOOTS.get(), ModArmorMaterials.AMMARITO_KEY, ItemModelGenerators.TRIM_PREFIX_BOOTS, false);
+
+        itemModels.declareCustomModelItem(ModItems.SHIKO_WAND.get());
 
 
 
