@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "tutorialmod:way_back_when",
+      "required": false
+    },
+    {
+      "id": "tutorialmod:nostalgia",
+      "required": false
+    },
+    {
+      "id": "tutorialmod:world",
+      "required": false
+    }
+  ]
+}

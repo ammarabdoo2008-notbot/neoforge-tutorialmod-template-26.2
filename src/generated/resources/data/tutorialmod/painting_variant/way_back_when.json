@@ -1,0 +1,13 @@
+{
+  "asset_id": "tutorialmod:way_back_when",
+  "author": {
+    "color": "gray",
+    "translate": "painting.tutorialmod.way_back_when.author"
+  },
+  "height": 2,
+  "title": {
+    "color": "yellow",
+    "translate": "painting.tutorialmod.way_back_when.title"
+  },
+  "width": 2
+}

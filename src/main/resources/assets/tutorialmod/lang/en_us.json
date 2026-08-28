@@ -25,5 +25,12 @@
   "item.tutorialmod.metal_detector": "Metal Detector",
   "item.tutorialmod.bowey": "Bowey The Bow",
 
-  "item.tutorialmod.shiko_wand" : "Shiko Magic Wand"
+  "item.tutorialmod.shiko_wand" : "Shiko Magic Wand",
+
+  "painting.tutorialmod.shrimp.title" : "A Shrimp",
+  "painting.tutorialmod.shrimp.author" : "ITS ME",
+  "painting.tutorialmod.nostalgia.title" : "Nostalgic?",
+  "painting.tutorialmod.nostalgia.author" : "ITS ME",
+  "painting.tutorialmod.world.title" : "World",
+  "painting.tutorialmod.world.author" : "ITS ME"
 }
