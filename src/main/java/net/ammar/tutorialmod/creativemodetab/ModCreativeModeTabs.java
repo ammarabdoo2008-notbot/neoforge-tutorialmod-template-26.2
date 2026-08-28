@@ -42,6 +42,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.AMMARITO_CHESTPLATE);
                         output.accept(ModItems.AMMARITO_LEGGINGS);
                         output.accept(ModItems.AMMARITO_BOOTS);
+
+                        output.accept(ModItems.BOWEY);
+
                     })
 
 
@@ -55,6 +58,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.AMMARITO_BLOCK);
                         output.accept(ModBlocks.RAW_AMMARITO_BLOCK);
                         output.accept(ModBlocks.AMMARITO_ORE);
+                        output.accept(ModBlocks.PEDESTEL_BLOCK);
                     })
 
 

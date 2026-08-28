@@ -16,12 +16,14 @@
   "block.tutorialmod.raw_ammarito_block" : "Raw Ammarito Block",
   "block.tutorialmod.ammarito_block" : "Ammarito Block",
   "block.tutorialmod.ammarito_ore" : "Ammarito Ore",
+  "block.tutorialmod.pedestal_block" : "Pedestal",
 
   "creativetab.tutorialmod.ammarito_items": "Ammarito Tutorial Items",
   "creativetab.tutorialmod.ammarito_blocks": "Ammarito Tutorial Blocks",
 
   "item.tutorialmod.metal_detector.no_valuables": "No Valueables Detected!!",
   "item.tutorialmod.metal_detector": "Metal Detector",
+  "item.tutorialmod.bowey": "Bowey The Bow",
 
   "item.tutorialmod.shiko_wand" : "Shiko Magic Wand"
 }

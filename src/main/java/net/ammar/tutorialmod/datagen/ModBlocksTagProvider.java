@@ -21,7 +21,9 @@ public class ModBlocksTagProvider extends BlockTagsProvider {
       tag(BlockTags.MINEABLE_WITH_PICKAXE)
               .add(ModBlocks.AMMARITO_BLOCK.getKey())
               .add(ModBlocks.AMMARITO_ORE.getKey())
-              .add(ModBlocks.RAW_AMMARITO_BLOCK.getKey());
+              .add(ModBlocks.RAW_AMMARITO_BLOCK.getKey())
+              .add(ModBlocks.PEDESTEL_BLOCK.getKey());
+
 
       tag(BlockTags.NEEDS_IRON_TOOL)
               .add(ModBlocks.RAW_AMMARITO_BLOCK.getKey())

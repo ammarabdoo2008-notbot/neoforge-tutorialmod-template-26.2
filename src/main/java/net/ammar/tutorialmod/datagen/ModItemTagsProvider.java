@@ -32,5 +32,7 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         tag(ItemTags.CHEST_ARMOR).add(ModItems.AMMARITO_CHESTPLATE.getKey());
         tag(ItemTags.HEAD_ARMOR).add(ModItems.AMMARITO_HELMET.getKey());
 
+        tag(ItemTags.BOW_ENCHANTABLE).add(ModItems.BOWEY.getKey());
+
     }
 }

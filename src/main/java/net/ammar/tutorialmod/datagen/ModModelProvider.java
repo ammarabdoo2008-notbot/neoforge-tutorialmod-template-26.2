@@ -37,6 +37,9 @@ public class ModModelProvider extends ModelProvider {
 
         itemModels.declareCustomModelItem(ModItems.SHIKO_WAND.get());
 
+        itemModels.createFlatItemModel(ModItems.BOWEY.get(), ModelTemplates.BOW);
+        itemModels.generateBow(ModItems.BOWEY.get());
+
 
 
 
@@ -45,5 +48,7 @@ public class ModModelProvider extends ModelProvider {
         blockModels.createTrivialCube(ModBlocks.AMMARITO_BLOCK.get());
         blockModels.createTrivialCube(ModBlocks.AMMARITO_ORE.get());
         blockModels.createTrivialCube(ModBlocks.RAW_AMMARITO_BLOCK.get());
+
+        blockModels.createNonTemplateModelBlock(ModBlocks.PEDESTEL_BLOCK.get());
     }
 }

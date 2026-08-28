@@ -3,10 +3,7 @@ package net.ammar.tutorialmod.item;
 import net.ammar.tutorialmod.TutorialMod;
 import net.ammar.tutorialmod.item.custom.MetalDetectorItem;
 import net.ammar.tutorialmod.item.custom.ShikoWandItem;
-import net.minecraft.world.item.AxeItem;
-import net.minecraft.world.item.HoeItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ShovelItem;
+import net.minecraft.world.item.*;
 import net.minecraft.world.item.equipment.ArmorType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.common.Tags;
@@ -49,6 +46,12 @@ public class ModItems {
             properties -> new Item(properties.humanoidArmor(ModArmorMaterials.AMMARITO_ARMOR_MATERIAL, ArmorType.LEGGINGS)));
     public static final DeferredItem<Item> AMMARITO_BOOTS = ITEMS.registerItem("ammarito_boots",
             properties -> new Item(properties.humanoidArmor(ModArmorMaterials.AMMARITO_ARMOR_MATERIAL, ArmorType.BOOTS)));
+
+    public static final DeferredItem<Item> BOWEY = ITEMS.registerItem("bowey",
+            properties -> new BowItem(properties
+                    .durability(500)
+                    .repairable(Tags.Items.INGOTS_COPPER)
+                    .enchantable(13)));
 
 
     public static void register(IEventBus eventBus) {

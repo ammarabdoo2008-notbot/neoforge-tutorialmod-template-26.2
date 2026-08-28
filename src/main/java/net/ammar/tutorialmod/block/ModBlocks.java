@@ -1,6 +1,7 @@
 package net.ammar.tutorialmod.block;
 
 import net.ammar.tutorialmod.TutorialMod;
+import net.ammar.tutorialmod.block.custom.PedestalBlock;
 import net.ammar.tutorialmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -29,6 +30,14 @@ public class ModBlocks {
     public static final DeferredBlock<Block> AMMARITO_ORE = registerBlock("ammarito_ore",
             properties -> new DropExperienceBlock(UniformInt.of(2, 4), properties.strength(3f)
                     .requiresCorrectToolForDrops().sound(SoundType.NETHER_GOLD_ORE)));
+
+    public static final DeferredBlock<Block> PEDESTEL_BLOCK = registerBlock("pedestal_block",
+            properties -> new PedestalBlock(properties
+                    .strength(2f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.CALCITE)));
+
+
 
 
 

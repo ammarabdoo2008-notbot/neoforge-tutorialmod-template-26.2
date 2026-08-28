@@ -19,6 +19,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     protected void generate() {
        dropSelf(ModBlocks.AMMARITO_BLOCK.get());
        dropSelf(ModBlocks.RAW_AMMARITO_BLOCK.get());
+       dropSelf(ModBlocks.PEDESTEL_BLOCK.get());
 
        add(ModBlocks.AMMARITO_ORE.get(),
                createOreDrop(ModBlocks.AMMARITO_ORE.get(), ModItems.RAW_AMMARITO.get()));
