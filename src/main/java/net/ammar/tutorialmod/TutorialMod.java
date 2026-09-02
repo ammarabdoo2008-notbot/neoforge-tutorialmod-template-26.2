@@ -2,7 +2,10 @@ package net.ammar.tutorialmod;
 
 import net.ammar.tutorialmod.block.ModBlocks;
 import net.ammar.tutorialmod.creativemodetab.ModCreativeModeTabs;
+import net.ammar.tutorialmod.entity.EntityTypes;
+import net.ammar.tutorialmod.entity.custom.FerretEntity;
 import net.ammar.tutorialmod.item.ModItems;
+import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -30,16 +33,24 @@ public class TutorialMod {
 
         modEventBus.addListener(this::commonSetup);
 
+        modEventBus.addListener(this::registerEntityAttributes);
+
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+
         ModBlocks.register(modEventBus);
+
+        EntityTypes.ENTITY_TYPES.register(modEventBus);
 
 
 
         NeoForge.EVENT_BUS.register(this);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+    }
+    private void registerEntityAttributes(EntityAttributeCreationEvent event) {
+        event.put(EntityTypes.FERRET_ENTITY.get(), FerretEntity.createAttributes().build());
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {

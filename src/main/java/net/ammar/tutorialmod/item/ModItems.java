@@ -1,6 +1,7 @@
 package net.ammar.tutorialmod.item;
 
 import net.ammar.tutorialmod.TutorialMod;
+import net.ammar.tutorialmod.entity.EntityTypes;
 import net.ammar.tutorialmod.item.custom.BoweyItem;
 import net.ammar.tutorialmod.item.custom.MetalDetectorItem;
 import net.ammar.tutorialmod.item.custom.ShikoWandItem;
@@ -56,6 +57,17 @@ public class ModItems {
                     .durability(500)
                     .repairable(Tags.Items.INGOTS_COPPER)
                     .enchantable(13)));
+
+    // Assume we have a DeferredRegister.Items called ITEMS
+    public static final DeferredItem<SpawnEggItem> FERRET_SPAWN_EGG = ITEMS.registerItem("ferret_spawn_egg",
+            properties -> new SpawnEggItem(
+                    // The properties passed into the lambda.
+                    // Using `spawnEgg` to set the DataComponent.
+                    // This is done in the lambda to prevent the entity type from resolving before registration.
+                    properties.spawnEgg(EntityTypes.FERRET_ENTITY.get())
+            ));
+
+
 
 
     public static void register(IEventBus eventBus) {

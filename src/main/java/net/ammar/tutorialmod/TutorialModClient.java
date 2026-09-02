@@ -2,6 +2,7 @@ package net.ammar.tutorialmod;
 
 import net.ammar.tutorialmod.entity.EntityTypes;
 import net.ammar.tutorialmod.entity.custom.client.FerretModel;
+import net.ammar.tutorialmod.entity.custom.client.FerretRenderer;
 import net.minecraft.client.Minecraft;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -37,6 +38,6 @@ public class TutorialModClient {
     }
     @SubscribeEvent
     static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
-        event.registerEntityRenderer(EntityTypes.FERRET_ENTITY.get(), FerretModel::new);
+        event.registerEntityRenderer(EntityTypes.FERRET_ENTITY.get(), FerretRenderer::new);
     }
 }

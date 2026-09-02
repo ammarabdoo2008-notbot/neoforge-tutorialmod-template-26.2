@@ -70,7 +70,7 @@ public class FerretModel extends EntityModel<LivingEntityRenderState> {
     public void setupAnim(LivingEntityRenderState state) {
         super.setupAnim(state);
 
-        this.head.yRot = (state.yRot - state.bodyRot) * DEG_TO_RAD;
+        this.head.yRot = state.yRot * DEG_TO_RAD;
         this.head.xRot = state.xRot * DEG_TO_RAD;
 
         float swing = Mth.cos(state.walkAnimationPos * 0.6662F) * 1.2F * state.walkAnimationSpeed;
