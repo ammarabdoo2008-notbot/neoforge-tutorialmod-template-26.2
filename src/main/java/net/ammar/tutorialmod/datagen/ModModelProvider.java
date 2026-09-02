@@ -22,7 +22,6 @@ public class ModModelProvider extends ModelProvider {
         itemModels.generateFlatItem(ModItems.RAW_AMMARITO.get(), ModelTemplates.FLAT_ITEM);
 
         itemModels.generateFlatItem(ModItems.METAL_DETECTOR.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
-        //itemModels.generateFlatItem(ModItems.SHIKO_WAND.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
 
         itemModels.generateFlatItem(ModItems.AMMARITO_SWORD.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ModItems.AMMARITO_PICKAXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
@@ -36,6 +35,7 @@ public class ModModelProvider extends ModelProvider {
         itemModels.generateTrimmableItem(ModItems.AMMARITO_BOOTS.get(), ModArmorMaterials.AMMARITO_KEY, ItemModelGenerators.TRIM_PREFIX_BOOTS, false);
 
         itemModels.declareCustomModelItem(ModItems.SHIKO_WAND.get());
+        itemModels.declareCustomModelItem(ModItems.AMMARITO_TRIDENT.get());
 
         itemModels.createFlatItemModel(ModItems.BOWEY.get(), ModelTemplates.BOW);
         itemModels.generateBow(ModItems.BOWEY.get());

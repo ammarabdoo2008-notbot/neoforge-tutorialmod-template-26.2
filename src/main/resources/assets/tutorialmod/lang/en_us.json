@@ -32,5 +32,7 @@
   "painting.tutorialmod.nostalgia.title" : "Nostalgic?",
   "painting.tutorialmod.nostalgia.author" : "ITS ME",
   "painting.tutorialmod.world.title" : "World",
-  "painting.tutorialmod.world.author" : "ITS ME"
+  "painting.tutorialmod.world.author" : "ITS ME",
+
+  "item.tutorialmod.ammarito_trident" : "Ammarito Trident"
 }

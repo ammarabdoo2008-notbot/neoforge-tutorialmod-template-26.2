@@ -1,8 +1,10 @@
 package net.ammar.tutorialmod.item;
 
 import net.ammar.tutorialmod.TutorialMod;
+import net.ammar.tutorialmod.item.custom.BoweyItem;
 import net.ammar.tutorialmod.item.custom.MetalDetectorItem;
 import net.ammar.tutorialmod.item.custom.ShikoWandItem;
+import net.ammar.tutorialmod.item.custom.TridentoItem;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.equipment.ArmorType;
 import net.neoforged.bus.api.IEventBus;
@@ -38,6 +40,8 @@ public class ModItems {
     public static final DeferredItem<Item> AMMARITO_HOE = ITEMS.registerItem("ammarito_hoe", properties ->
             new HoeItem(ModToolTiers.AMMARITO, 0 ,-3F, properties));
 
+    public static final DeferredItem<Item> AMMARITO_TRIDENT = ITEMS.registerItem("ammarito_trident",
+            properties -> new TridentoItem(properties.durability(500).rarity(Rarity.EPIC).repairable(Items.HEART_OF_THE_SEA).enchantable(12)));
     public static final DeferredItem<Item> AMMARITO_HELMET = ITEMS.registerItem("ammarito_helmet",
             properties -> new Item(properties.humanoidArmor(ModArmorMaterials.AMMARITO_ARMOR_MATERIAL, ArmorType.HELMET)));
     public static final DeferredItem<Item> AMMARITO_CHESTPLATE = ITEMS.registerItem("ammarito_chestplate",
@@ -48,7 +52,7 @@ public class ModItems {
             properties -> new Item(properties.humanoidArmor(ModArmorMaterials.AMMARITO_ARMOR_MATERIAL, ArmorType.BOOTS)));
 
     public static final DeferredItem<Item> BOWEY = ITEMS.registerItem("bowey",
-            properties -> new BowItem(properties
+            properties -> new BoweyItem(properties
                     .durability(500)
                     .repairable(Tags.Items.INGOTS_COPPER)
                     .enchantable(13)));

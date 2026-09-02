@@ -2,6 +2,7 @@ package net.ammar.tutorialmod.datagen;
 
 import net.ammar.tutorialmod.TutorialMod;
 import net.ammar.tutorialmod.block.ModBlocks;
+import net.ammar.tutorialmod.item.ModItems;
 import net.ammar.tutorialmod.tags.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -41,5 +42,6 @@ public class ModBlocksTagProvider extends BlockTagsProvider {
       tag(ModTags.Blocks.INCORRECT_FOR_AMMARITO_TOOL)
               .addTag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
               .remove(ModTags.Blocks.NEEDS_AMMARITO_TOOL);
+
     }
 }

@@ -44,6 +44,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.AMMARITO_BOOTS);
 
                         output.accept(ModItems.BOWEY);
+                        output.accept(ModItems.AMMARITO_TRIDENT);
 
                     })
 

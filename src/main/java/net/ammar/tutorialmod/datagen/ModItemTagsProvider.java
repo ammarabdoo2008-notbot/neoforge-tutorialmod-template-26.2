@@ -7,6 +7,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
+import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.common.data.ItemTagsProvider;
 
 import java.util.concurrent.CompletableFuture;
@@ -20,6 +21,7 @@ public class ModItemTagsProvider extends ItemTagsProvider {
     protected void addTags(HolderLookup.Provider registries) {
         tag(ModTags.Items.AMMARITO_REPAIRABLE)
                 .add(ModItems.AMMARITO.getKey());
+        tag(ItemTags.MINING_ENCHANTABLE).add(ModItems.AMMARITO_AXE.getKey());
 
         tag(ItemTags.SWORDS).add(ModItems.AMMARITO_SWORD.getKey());
         tag(ItemTags.PICKAXES).add(ModItems.AMMARITO_PICKAXE.getKey());
@@ -33,6 +35,7 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         tag(ItemTags.HEAD_ARMOR).add(ModItems.AMMARITO_HELMET.getKey());
 
         tag(ItemTags.BOW_ENCHANTABLE).add(ModItems.BOWEY.getKey());
+        tag(ItemTags.TRIDENT_ENCHANTABLE).add(ModItems.AMMARITO_TRIDENT.getKey());
 
     }
 }
