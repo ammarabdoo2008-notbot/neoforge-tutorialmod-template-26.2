@@ -7,12 +7,13 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.PathfinderMob;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.storage.ValueInput;
 import net.minecraft.world.level.storage.ValueOutput;
 
-public class FerretEntity extends Entity {
-    public FerretEntity(EntityType<?> type, Level level) {
+public class FerretEntity extends PathfinderMob {
+    public FerretEntity(EntityType<? extends PathfinderMob> type, Level level) {
         super(type, level);
     }
 

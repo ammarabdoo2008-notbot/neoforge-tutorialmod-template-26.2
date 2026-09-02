@@ -20,12 +20,11 @@ public class EntityTypes {
             "ferret_entity",
             () -> EntityType.Builder.of(
                             FerretEntity::new,
-                            MobCategory.MISC
+                            MobCategory.CREATURE
                     )
                     .sized(1.0f, 1.0f)
                     .spawnDimensionsScale(4.0f)
                     .eyeHeight(0.5f)
-                    .noSummon()
                     .fireImmune()
                     .canSpawnFarFromPlayer()
                     .clientTrackingRange(8)
