@@ -1,12 +1,15 @@
 package net.ammar.tutorialmod.entity;
 
 import net.ammar.tutorialmod.TutorialMod;
+import net.ammar.tutorialmod.entity.custom.AxeProjectile;
 import net.ammar.tutorialmod.entity.custom.FerretEntity;
+import net.ammar.tutorialmod.entity.custom.PhantomCatEntity;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
+import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
@@ -34,6 +37,34 @@ public class EntityTypes {
                             Identifier.fromNamespaceAndPath("tutorialmod", "ferret_entity")
                     ))
     );
+
+    public static final Supplier<EntityType<PhantomCatEntity>> PHANTOMCAT_ENTITY = ENTITY_TYPES.register(
+            "phantomcat_entity",
+            () -> EntityType.Builder.of(
+                            PhantomCatEntity::new,
+                            MobCategory.CREATURE
+                    )
+                    .sized(1.0f, 1.0f)
+                    .spawnDimensionsScale(4.0f)
+                    .eyeHeight(0.5f)
+                    .fireImmune()
+                    .canSpawnFarFromPlayer()
+                    .clientTrackingRange(8)
+                    .updateInterval(10)
+                    .build(ResourceKey.create(
+                            Registries.ENTITY_TYPE,
+                            Identifier.fromNamespaceAndPath("tutorialmod", "phantomcat_entity")
+                    ))
+    );
+
+    public static final DeferredHolder<EntityType<?>, EntityType<AxeProjectile>> AXE_PROJECTILE =
+            ENTITY_TYPES.register("axe_projectile",
+                    () -> EntityType.Builder.<AxeProjectile>of(AxeProjectile::new, MobCategory.MISC)
+                            .sized(0.5f, 0.5f)
+                            .build(ResourceKey.create(
+                                    Registries.ENTITY_TYPE,
+                                    Identifier.fromNamespaceAndPath("tutorialmod", "axe_projectile")
+                            )));
 
 
 }

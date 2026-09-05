@@ -1,8 +1,7 @@
 package net.ammar.tutorialmod;
 
 import net.ammar.tutorialmod.entity.EntityTypes;
-import net.ammar.tutorialmod.entity.custom.client.FerretModel;
-import net.ammar.tutorialmod.entity.custom.client.FerretRenderer;
+import net.ammar.tutorialmod.entity.custom.client.*;
 import net.minecraft.client.Minecraft;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -35,9 +34,12 @@ public class TutorialModClient {
     @SubscribeEvent
     static void registerLayerDefintitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
         event.registerLayerDefinition(FerretModel.LAYER_LOCATION, FerretModel::createBodyLayer);
+        event.registerLayerDefinition(PhantomCatModel.LAYER_LOCATION, PhantomCatModel::createBodyLayer);
     }
     @SubscribeEvent
     static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
         event.registerEntityRenderer(EntityTypes.FERRET_ENTITY.get(), FerretRenderer::new);
+        event.registerEntityRenderer(EntityTypes.AXE_PROJECTILE.get(), AxeProjectileRenderer::new);
+        event.registerEntityRenderer(EntityTypes.PHANTOMCAT_ENTITY.get(), PhantomCatRenderer::new);
     }
 }

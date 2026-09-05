@@ -4,6 +4,7 @@ import net.ammar.tutorialmod.block.ModBlocks;
 import net.ammar.tutorialmod.creativemodetab.ModCreativeModeTabs;
 import net.ammar.tutorialmod.entity.EntityTypes;
 import net.ammar.tutorialmod.entity.custom.FerretEntity;
+import net.ammar.tutorialmod.entity.custom.PhantomCatEntity;
 import net.ammar.tutorialmod.item.ModItems;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
 import org.slf4j.Logger;
@@ -51,6 +52,7 @@ public class TutorialMod {
     }
     private void registerEntityAttributes(EntityAttributeCreationEvent event) {
         event.put(EntityTypes.FERRET_ENTITY.get(), FerretEntity.createAttributes().build());
+        event.put(EntityTypes.PHANTOMCAT_ENTITY.get(), PhantomCatEntity.createAttributes().build());
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
